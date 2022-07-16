@@ -372,7 +372,7 @@ string SHA512(char * filename)
     output << decimaltohex(F);
     output << decimaltohex(G);
     output << decimaltohex(H);
-
+    NewFile.close();
     // Return the string
     return output.str();
 }
